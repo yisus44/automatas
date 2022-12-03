@@ -15,4 +15,14 @@ export class Util {
     if (!isNaN(char)) return true;
     return false;
   }
+
+  static getLetterType(char) {
+    if (this.isLetter(char)) {
+      return "Alphabet";
+    } else if (this.isNumber(char)) {
+      return "Number";
+    } else {
+      return "Symbol";
+    }
+  }
 }

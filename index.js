@@ -14,6 +14,5 @@ fileInput.addEventListener("change", function () {
     const parsedSymbols = Parser.parse(text);
     const results = new Analizer().analize(parsedSymbols, symbols);
     preview.innerHTML = new Interface().buildInterface(results);
-    console.log(results);
   });
 });
